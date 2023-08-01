@@ -5,13 +5,21 @@
 
 void printOddOrEven(int number)
 {
-	if (number % 2 == 0)
+	if (number == 0)
+	{
+		printf("NAN or 0\n");
+	}
+	else if (number % 2 == 0)
 	{
 		printf("EVEN\n");
 	}
-	else
+	else if ((number % 2 == 1) || (number % 2 == -1))
 	{
 		printf("ODD\n");
+	}
+	else
+	{
+		printf("NAN\n");
 	}
 }
 
@@ -47,7 +55,9 @@ int main(int argc, char *argv[])
 	//should use atoi?
 	// or std::stoi?
 
-	std::cout << argumentAsString << std::endl; // i think this should be removed
+	number = std::atoi(argumentAsCharArray);
+
+	//std::cout << argumentAsString << std::endl; // i think this should be removed
 
 	// --------------- stop
 
