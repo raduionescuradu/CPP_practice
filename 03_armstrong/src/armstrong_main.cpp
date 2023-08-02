@@ -3,13 +3,28 @@
 bool isArmstrongNumber(int number)
 {
 	// TODO: implement some functionality to see if this number is an armstrong number
+	int r, sum = 0, temp;
 
+	temp = number;
+	while (number > 0)
+	{
+		r = number % 10;
+		sum = sum + (r * r * r);
+		number = number / 10;
+	}
+	if (temp == sum)
+		return true;
+	
 	return false;
 }
 
 void printIsArmstrong(int number)
 {
-	if (isArmstrongNumber(number))
+	if (number == 0)
+	{
+		std::cout << "Undefined output or 0" << std::endl;
+	}
+	else if (isArmstrongNumber(number))
 	{
 		std::cout << "Armstrong" << std::endl;
 	}
@@ -52,6 +67,10 @@ int main(int argc, char *argv[])
 	std::string argumentAsString = argv[1];
 	
 	// TODO: read number / cast to integer
+
+	const char* argumentAsCharArray = argumentAsString.c_str();
+	readNumber = std::atoi(argumentAsCharArray);
+
 
 	printIsArmstrong(readNumber);
 	return 0;
