@@ -31,7 +31,14 @@ bool Person::setAge(int age)
 {
 	if (age < 0 || age > 200)
 	{
-		std::cout << "age error" << std::endl;
+		// std::cout << "age error" << std::endl;
+		// would need a stream to supply the class, in order to log something
+		mMyLogger << "age error";		// now will get an error
+
+		// homework
+		// if log level is set appropriatelu, the message will get to specified output
+		logger(ERROR) << "age error " << age; // to implement this kind of call to the logger
+
 		return false;
 	}
 	mAge = age;
