@@ -13,20 +13,20 @@ void main()
 
 	std::cout << myPerson.getName() << std::endl;
 
-	// myPointers(); class 3
+	myPerson.setAge(-22);
+
+
+
+	// myPointers();
 
 	// myMatrix();
 
-
-	std::cout << "hello world! " << std::endl;
-
+	/*
 	if (JumpCondition())
 		std::cout << "call was successfull" << std::endl;
 	else
 		std::cout << "error executing the method" << std::endl;
-
-
+	*/
 
 	// FooBarApp(30);
-
 }
