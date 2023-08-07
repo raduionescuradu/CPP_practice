@@ -6,9 +6,12 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Curs2", "Curs2\Curs2.vcxproj", "{EE8BE137-5CED-4C78-B292-C1A135E2E8C2}"
 	ProjectSection(ProjectDependencies) = postProject
 		{0A648519-E558-414F-80F4-34A1C47C9F52} = {0A648519-E558-414F-80F4-34A1C47C9F52}
+		{CA96D2EA-3AD8-491E-BA9C-0FAC58F97672} = {CA96D2EA-3AD8-491E-BA9C-0FAC58F97672}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MemoryManagement", "MemoryManagement\MemoryManagement.vcxproj", "{0A648519-E558-414F-80F4-34A1C47C9F52}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class_4_OOP", "Class_4_OOP\Class_4_OOP.vcxproj", "{CA96D2EA-3AD8-491E-BA9C-0FAC58F97672}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +37,14 @@ Global
 		{0A648519-E558-414F-80F4-34A1C47C9F52}.Release|x64.Build.0 = Release|x64
 		{0A648519-E558-414F-80F4-34A1C47C9F52}.Release|x86.ActiveCfg = Release|Win32
 		{0A648519-E558-414F-80F4-34A1C47C9F52}.Release|x86.Build.0 = Release|Win32
+		{CA96D2EA-3AD8-491E-BA9C-0FAC58F97672}.Debug|x64.ActiveCfg = Debug|x64
+		{CA96D2EA-3AD8-491E-BA9C-0FAC58F97672}.Debug|x64.Build.0 = Debug|x64
+		{CA96D2EA-3AD8-491E-BA9C-0FAC58F97672}.Debug|x86.ActiveCfg = Debug|Win32
+		{CA96D2EA-3AD8-491E-BA9C-0FAC58F97672}.Debug|x86.Build.0 = Debug|Win32
+		{CA96D2EA-3AD8-491E-BA9C-0FAC58F97672}.Release|x64.ActiveCfg = Release|x64
+		{CA96D2EA-3AD8-491E-BA9C-0FAC58F97672}.Release|x64.Build.0 = Release|x64
+		{CA96D2EA-3AD8-491E-BA9C-0FAC58F97672}.Release|x86.ActiveCfg = Release|Win32
+		{CA96D2EA-3AD8-491E-BA9C-0FAC58F97672}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
